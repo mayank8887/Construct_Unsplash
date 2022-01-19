@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sidebyside{
+            display: flex;
+            width: 240px;
+            justify-content: space-between;
+        
+        }
+        #sidebyside2{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Join Unsplash</h1>
+    <p>Already have an account?<a href="login.html">Login</a></p>
+    <form>
+        <div id="sidebyside">
+         <p>First name</p>
+         <p>Last name</p>
+        </div>
+        <div id="sidebyside2">
+            <input type="text" id="name">
+            <input type="text" id="lastname">
+        </div>
+        <p>Email</p>
+        <input type="text" id="email">
+        <p>Username<p>(only letters,numbers and underscores)</p></p>
+        <input type="text" id="user">
+        <br><br>
+        <p>Password</p>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <input type="submit" value="Join">
+
+    </form>
+    <p>By joining, you agree to the terms and privacy policy</p>
+
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", onSubmit);
+    var userstack =JSON.parse(localStorage.getItem("userdatabase")) || [];;
+      
+    function onSubmit(event){
+        event.preventDefault();
+        var firstname=document.querySelector("#name").value;
+        var lastname=document.querySelector("#lastname").value;
+        var email=document.querySelector("#email").value;
+        var user=document.querySelector("#user").value;
+        var pass=document.querySelector("#pass").value;
+
+        var userdata= {
+            frstname : firstname,
+            lstname : lastname,
+            emailid : email,
+            username : user,
+            passwrd : pass,
+
+        };
+       
+        userstack.push(userdata);
+        
+        localStorage.setItem("userdatabase" ,JSON.stringify(userstack));
+        alert("singup success");
+        windown.location.heref="login.html";
+        
+    }
+    
+
+</script>
