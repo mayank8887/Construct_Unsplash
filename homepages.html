@@ -57,13 +57,14 @@
     }
     .sam {
   position: relative;
-  width: 500px;
+  width: 950px;
 }
 .sam input {
   width: 100%;
-  padding: 20px; 
+  padding: 15px; 
   background-color: #fff;
   border-radius: 20px;
+  font-size: 20px;
   position: absolute;
   border: 1px solid #fff;
   display: block;
@@ -79,11 +80,12 @@
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
+  color: silver;
   position: absolute;
   top: 0px;
-  left: 15px;
+  right: 0px;
   padding: 10px;
-  z-index: 2;
+  z-index: 1;
 }
 .baba{
   display: flex;
@@ -101,7 +103,7 @@
       }
       .bd>div{
         margin: auto;
-        padding: 200px 0 0 400px;
+        padding: 300px 0 0 400px;
       font-size: 2em;
       color: white;
       }
@@ -113,6 +115,52 @@
         color: white;
       }
 
+      .suman{
+  position: relative;
+  width: 900px;
+}
+.suman input {
+  width: 100%;
+  padding: 30px; 
+  background-color: #fff;
+ font-size: 25px;
+ text-align: start;
+  position: absolute;
+  border: 1px solid #fff;
+  display: block;
+  margin-top: 0pt;
+  
+}
+.suman input:hover{
+  background-color: white;
+}
+.suman button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  color: silver;
+  top: 30px;
+  left: 3px;
+  padding: 0px;
+
+}
+
+.suman a {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  color: silver;
+  top: 30px;
+  right:  0px;
+  padding: 0px;
+
+}
 
         </style>
   <body>
@@ -130,8 +178,8 @@
       <div class="right">
         <a href="#Explore"> Explore </a>
         <a href="#Advertise"> Advertise </a>
-        <a href="#blog"> Blog </a>
-        <a href="login.html"> Log in </a>
+        <a href="Blog.html"> Blog </a>
+        <a href="Login.html"> Log in </a>
       <button type="submit">Submit a photo</button>
         <a href="select"><i class="fas fa-align-justify"></i></a>
       </div>
@@ -140,18 +188,18 @@
         <a href="editorial.html"> Editorial </a>
         <a href="hul"><i class="fas fa-angle-left"></i></a>
         <a href="blockchain.html"> Blockchain</a>
-        <a href="wallpaper.html"> Wallpaper </a>
-        <a href="3draners.html"> 3D Randers </a>
-        <a href="textnpatt.html"> Texture & Pattern </a>
-        <a href="architecture.html"> Architecture </a>
+        <a href="Wallpapers.html"> Wallpapers </a>
+        <a href="animal.html"> Animals </a>
+        <a href="Food_drink.html"> Food & Drink </a>
+        <a href="History.html"> History </a>
+        <a href="Art_culture.html"> Art & Culture </a>
         <a href="experimental.html"> Experimental </a>
         <a href="nature.html">Nature </a>
         <a href="business.html"> Business & Work </a>
         <a href="fashion.html"> Fashion </a>
         <a href="film.html"> Film </a>
-        <a href="food.html"> Food & Drink </a>
+        <a href="textnpatt.html"> Texture & Pattern </a>
         <a href="health.html"> Health & Welness </a>
-        <a href="animal.html"> Animals </a>
         <a href="peple.html"> People </a>
         <a href="travel.html"> Travel </a>
         <a href="#ran"> <i class="fas fa-angle-right"></i> </a>
@@ -164,6 +212,11 @@
  <p>The internet’s source of <a href="freeinamge.html"> freely-usable images.</a> </p> 
 </div>
  <p>Powered by creators everywhere.</p>
+ <div class="suman">
+  <input type="text" class="input" placeholder="Search for high-resolution photos">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <a href="cameras"><i class="fas fa-camera"></i></a>
+</div>
 </div>
 </div>
   </body>
