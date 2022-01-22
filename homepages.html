@@ -65,6 +65,7 @@
   background-color: #fff;
   border-radius: 20px;
   font-size: 20px;
+  text-indent: 2rem;
   position: absolute;
   border: 1px solid #fff;
   display: block;
@@ -79,13 +80,29 @@
   border: none;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   color: silver;
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
   padding: 10px;
   z-index: 1;
+}
+.sam button:hover{
+  color: black;
+}
+.sam a {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  color: silver;
+  top: 5px;
+  right:  0px;
+  padding: 0px;
+
 }
 .baba{
   display: flex;
@@ -124,7 +141,7 @@
   padding: 30px; 
   background-color: #fff;
  font-size: 25px;
- text-align: start;
+ text-indent: 2rem;
   position: absolute;
   border: 1px solid #fff;
   display: block;
@@ -143,7 +160,7 @@
   position: absolute;
   color: silver;
   top: 30px;
-  left: 3px;
+  left: 20px;
   padding: 0px;
 
 }
@@ -157,9 +174,15 @@
   position: absolute;
   color: silver;
   top: 30px;
-  right:  0px;
+  right:  0pt;
   padding: 0px;
 
+}
+.suman a:hover{
+  color: black;
+}
+.suman button:hover{
+  color: black;
 }
 
         </style>
@@ -172,6 +195,7 @@
         <div class="sam">
             <input type="text" class="input" placeholder="Search for high-resolution photos">
             <button type="submit"><i class="fa fa-search"></i></button>
+            <a href="camera"><i class="fas fa-camera"></i></a>
           </div>
           </div>
       
