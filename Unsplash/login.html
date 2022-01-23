@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #set{
+            display: flex;
+            width: 500px;
+            justify-content: space-between;
+            
+        }
+        a{
+            color: grey;
+        }
+        #container{
+            background-color: gray;
+            width: 35%;
+            margin: auto;
+           
+            
+        }
+        #userid{
+            width: 500px;
+            height: 30px;
+        }
+        #pass{
+            width: 500px;
+            height: 30px;
+        }
+        h1,.center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+     <h1>Login</h1>
+     <p class="center">Welcome back.</p>
+     <form>
+        <p>Email address</p>
+        <input type="text" id="userid">
+        <div id="set">
+            <p>Password</p>
+            <p>Forget your password?</p>
+        </div>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <input type="submit" value="Login">
+        <br><br>
+        <p>Don't have an account? <a href="signin.html">Join</a></p>
+     </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",Login);
+     var registrdusers=JSON.parse(localStorage.getItem("userdatabase"));
+    function Login(event){
+        event.preventDefault();
+        var email=document.querySelector("#userid").value;
+        var pass=document.querySelector("#pass").value;
+
+        var count=0;
+        for(var i=0;i< registrdusers.length;i++){
+            console.log(registrdusers[i].emailid,registrdusers[i].passwrd);
+            if(registrdusers[i].emailid==email && registrdusers[i].passwrd==pass){
+                alert("Successful login")
+                window.location.heref="";
+            }
+            else if(registrdusers[i].emailid !==email || registrdusers[i].passwrd !== pass){
+                count++;
+                if(count==registrdusers.length){
+                    alert("Wrong Credentials")
+                }
+            }
+        }
+ }
+</script>
