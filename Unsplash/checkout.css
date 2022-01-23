@@ -1,0 +1,25 @@
+#container {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.input_field {
+  width: 35%;
+  height: 30px;
+  margin: 10px 0;
+}
+
+.pay_btn {
+  width: 35.5%;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
