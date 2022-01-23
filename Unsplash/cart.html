@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/852a0e2330.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1></h1>
+    <button onclick="window.location.href='checkout.html'">checkout <i class="fas fa-credit-card"></i></button>
+
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+
+<script>
+    var cartarr=JSON.parse(localStorage.getItem("cart"));
+    console.log(cartarr);
+
+    cartarr.map(function(item){
+
+        var div = document.createElement('div');
+        div.setAttribute("id","Overlay")
+
+        var image1 = document.createElement('img');
+        image1.setAttribute('src', item.image);
+
+         
+        div.append(image1);
+
+        document.querySelector("#container").append(div);
+    });
+
+    var total=cartarr.reduce(function(acc,cv){
+        return acc+Number(cv.price);
+    },0);
+
+    document.querySelector("h1").textContent=`Total amount is ${total}`
+    
+</script>
