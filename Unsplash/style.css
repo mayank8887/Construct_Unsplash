@@ -199,6 +199,7 @@ body {
 .baba {
   display: flex;
   justify-content: space-around;
+  margin-top: 25px;
 }
 .baba a {
   color: gray;
@@ -206,6 +207,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 22px;
+  line-height: 21px;
 }
 .baba a:hover {
   color: black;
