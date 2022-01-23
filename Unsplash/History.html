@@ -11,8 +11,50 @@
 </head>
 
 <body>
-    <button onclick="window.location.href='cart.html'">Cart <i class="fas fa-shopping-cart"></i></button>
-    <button onclick="window.location.href='wishlist.html'">Wishlist <i class="fas fa-heart"></i></button>
+    <div id="cont">
+        <div class="sai">
+            <div class="left">
+                <a href="homepages.html"> <i class="fas fa-home"></i> </a>
+
+                <div class="sam">
+                    <input type="text" class="input" placeholder="Search for high-resolution photos">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <a href="camera"><i class="fas fa-camera"></i></a>
+                </div>
+            </div>
+
+            <div class="right">
+                <a href="#Explore"> Explore </a>
+                <a href="#Advertise"> Advertise </a>
+                <a href="Blog.html"> Blog </a>
+                <a href="Login.html"> Log in </a>
+                <button type="submit">Submit a photo</button>
+                <button onclick="window.location.href='cart.html'">Cart <i class="fas fa-shopping-cart"></i></button>
+                <button onclick="window.location.href='wishlist.html'">Wishlist <i class="fas fa-heart"></i></button>
+                <a href="select"><i class="fas fa-align-justify"></i></a>
+            </div>
+        </div>
+        <div class="baba">
+            <a href="editorial.html"> Editorial </a>
+            <a href="hul"><i class="fas fa-angle-left"></i></a>
+            <a href="blockchain.html"> Blockchain</a>
+            <a href="Wallpapers.html"> Wallpapers </a>
+            <a href="animals.html"> Animals </a>
+            <a href="Food_drink.html"> Food & Drink </a>
+            <a href="History.html"> History </a>
+            <a href="Art_culture.html"> Art & Culture </a>
+            <a href="experimental.html"> Experimental </a>
+            <a href="nature.html">Nature </a>
+            <a href="business.html"> Business & Work </a>
+            <a href="fashion.html"> Fashion </a>
+            <a href="film.html"> Film </a>
+            <a href="textnpatt.html"> Texture & Pattern </a>
+            <a href="health.html"> Health & Welness </a>
+            <a href="peple.html"> People </a>
+            <a href="travel.html"> Travel </a>
+            <a href="#ran"> <i class="fas fa-angle-right"></i> </a>
+        </div>
+    </div>
     <div id="container">
 
     </div>
@@ -68,7 +110,7 @@
         },
         {
             image: "https://images.unsplash.com/photo-1641566219315-ee36bf6ab691?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGRpanBidzk5a1FRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            price:"20"
+            price: "20"
         },
         {
             image: "https://images.unsplash.com/photo-1629916109663-2dd1ca240689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGRpanBidzk5a1FRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
@@ -231,37 +273,37 @@
     localStorage.setItem("History", JSON.stringify(data02));
 
     var data1 = JSON.parse(localStorage.getItem("History"));
-    var wisharr=JSON.parse(localStorage.getItem("Wish"))|| [];
+    var wisharr = JSON.parse(localStorage.getItem("Wish")) || [];
 
-    var cartarr=JSON.parse(localStorage.getItem("cart"))|| [];
+    var cartarr = JSON.parse(localStorage.getItem("cart")) || [];
 
     data1.map(function (item) {
         //creating div
         var div = document.createElement("div");
-        div.setAttribute("id","Overlay");
+        div.setAttribute("id", "Overlay");
         //creating image
         var image1 = document.createElement("img");
         image1.setAttribute("src", item.image);
         //image append to div
 
-        var div1=document.createElement("div");
-        div1.setAttribute("class","align");
+        var div1 = document.createElement("div");
+        div1.setAttribute("class", "align");
 
-        var butn= document.createElement("button");
-        butn.innerHTML='<i class="fas fa-heart"></i>';
-        butn.addEventListener("click",function(){
+        var butn = document.createElement("button");
+        butn.innerHTML = '<i class="fas fa-heart"></i>';
+        butn.addEventListener("click", function () {
             addedtowish(item);
         });
 
-        var butn1=document.createElement("button");
-        butn1.innerHTML ='<i class="fas fa-shopping-cart"></i>';
-        butn1.addEventListener("click",function(){
+        var butn1 = document.createElement("button");
+        butn1.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+        butn1.addEventListener("click", function () {
             addedtocart(item);
         });
 
-        div1.append(butn,butn1);
-        
-        div.append(image1,div1);
+        div1.append(butn, butn1);
+
+        div.append(image1, div1);
 
         //all elements appendto main div #container
 
@@ -269,18 +311,18 @@
         document.querySelector("#container").append(div);
     });
 
-    function addedtowish(item){
-           console.log(item);
-           wisharr.push(item);
-           localStorage.setItem("Wish",JSON.stringify(wisharr));
-           alert("Added to wishlist")
-       }
+    function addedtowish(item) {
+        console.log(item);
+        wisharr.push(item);
+        localStorage.setItem("Wish", JSON.stringify(wisharr));
+        alert("Added to wishlist")
+    }
 
-       
-       function addedtocart(item){
-           console.log(item);
-           cartarr.push(item);
-           localStorage.setItem("cart",JSON.stringify(cartarr));
-           alert("Added to cart")
-       }
+
+    function addedtocart(item) {
+        console.log(item);
+        cartarr.push(item);
+        localStorage.setItem("cart", JSON.stringify(cartarr));
+        alert("Added to cart")
+    }
 </script>

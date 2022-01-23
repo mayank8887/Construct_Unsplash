@@ -6,31 +6,33 @@
   -moz-column-gap: 20px;
   column-count: 3;
   column-gap: 20px;
-  
+  padding: 200px;
+  overflow: hidden;
 }
 
 #container img {
   width: 100% !important;
   height: auto !important;
-  margin-bottom: 20px;  
+  margin-bottom: 25px;
 }
 
 #Overlay {
   margin-bottom: 18px;
 }
 
-#Overlay img{
+#Overlay img {
   opacity: 1;
   transition: 0.6s;
-  transition-property:opacity;
+  transition-property: opacity;
 }
 
-#Overlay:hover{
+#Overlay:hover {
   opacity: 0.9;
+  z-index: -1;
 }
 
-.align{
-  margin-top: -60px;
+.align {
+  margin-top: -90px;
   display: flex;
   justify-content: space-between;
   opacity: 0;
@@ -38,22 +40,29 @@
   transition-property: opacity;
 }
 
-#Overlay:hover .align{
+#Overlay:hover .align {
   opacity: 1;
 }
 
-button{
+.align > button {
+  color: white;
+  margin: 0 15px;
+  height: 50px;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+button {
   width: 80px;
-  height: 40px; 
+  height: 40px;
   background-color: gainsboro;
   color: black;
 }
 
-button:hover{
-  background-color: green;
-  color:white;
+button:hover {
+  background-color: black;
+  color: white;
 }
-
 
 @media screen and (min-width: 0px) and (max-width: 420px) {
   #container {
@@ -89,4 +98,114 @@ button:hover{
     height: auto !important;
     margin-bottom: 10px;
   }
+}
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 100%;
+  height: 70%;
+}
+#cont {
+  position: fixed;
+  background-color: white;
+  margin-top: -10px;
+  z-index: 1;
+}
+.sai {
+  display: flex;
+  height: 50px;
+  padding: 25px 0 0 20px;
+  margin-top: 0pt;
+}
+.sai a:hover {
+  color: black;
+}
+.sai a {
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+.left {
+  display: flex;
+  width: 60%;
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.sai .button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px gray;
+  cursor: pointer;
+}
+.sam {
+  position: relative;
+  width: 950px;
+}
+.sam input {
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  text-indent: 2rem;
+  position: absolute;
+  border: 1px solid #fff;
+  display: block;
+  margin-top: 0pt;
+}
+.sam input:hover {
+  background-color: white;
+}
+.sam button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  color: silver;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  z-index: 1;
+}
+.sam button:hover {
+  color: black;
+}
+.sam a {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  color: silver;
+  top: 5px;
+  right: 0px;
+  padding: 0px;
+}
+.baba {
+  display: flex;
+  justify-content: space-around;
+}
+.baba a {
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+.baba a:hover {
+  color: black;
 }
