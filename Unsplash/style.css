@@ -50,16 +50,11 @@
   height: 50px;
   border: 0px;
   margin-bottom: 20px;
-}
-
-button {
   width: 80px;
-  height: 40px;
   background-color: gainsboro;
-  color: black;
 }
 
-button:hover {
+.align > button:hover {
   background-color: black;
   color: white;
 }
@@ -126,20 +121,50 @@ body {
 .sai a {
   color: gray;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
+  margin: auto;
 }
 .left {
   display: flex;
-  width: 60%;
-  padding: 10px;
+  width: 54%;
+  padding: 10px 0;
+}
+
+.left > a > img {
+  width: 50px;
+  margin-right: 20px;
 }
 
 .right {
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 48%;
+}
+
+.right > .navbar_links {
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 10px 0 100px;
+}
+
+.right > .navbar_links > a {
+  padding: 0 5px;
+}
+
+.right > button {
+  margin: 10px 5px 0;
+  width: 100px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: gray;
+}
+
+.right > a {
+  margin-top: 19px;
 }
 .sai .button {
   padding: 6px 10px;
@@ -148,11 +173,11 @@ body {
   border: 1px gray;
   cursor: pointer;
 }
-.sam {
+.search_bar {
   position: relative;
   width: 940px;
 }
-.sam input {
+.search_bar input {
   width: 100%;
   padding: 15px;
   background-color: #eee;
@@ -164,10 +189,10 @@ body {
   display: block;
   margin-top: 0pt;
 }
-.sam input:hover {
+.search_bar input:hover {
   background-color: #eee;
 }
-.sam i {
+.search_bar i {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -180,10 +205,10 @@ body {
   padding: 10px;
   z-index: 1;
 }
-.sam button:hover {
+.search_bar button:hover {
   color: black;
 }
-.sam a {
+.search_bar a {
   background: transparent;
   border: none;
   cursor: pointer;
