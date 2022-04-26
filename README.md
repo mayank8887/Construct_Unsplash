@@ -4,7 +4,7 @@ a website where you can buy and dowloads all kind of images even you can save yo
 is features included.
 ## Authors
 
-- [Sumit thakur](https://www.github.com/SamSumit007)
+- [Sumit Thakur](https://www.github.com/SamSumit007)
 
 
 [SSuhani1102](https://www.github.com/Suhani1102)
