@@ -17,3 +17,23 @@ is features included.
 
 ## 🛠 Skills
  HTML, CSS...
+
+## Deplyement Link
+
+<a href="/">Netlify link</a>
+
+## Features
+ 
+- OTP based Login and Sign up
+- add the product into wishlist
+- Sorting product feature based on price
+- Cart page
+
+
+## Area of Resposibility
+
+- Built all the Category pages of the website
+- Integrated all the pages successfully
+- Developed the Payment page
+- Built Add to Cart functionality
+
