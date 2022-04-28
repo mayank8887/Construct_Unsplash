@@ -31,7 +31,7 @@ category pages showing the add to cart alert of the images.
 
 
 ![wishlist alert](https://i.imgur.com/mQxMAD8.jpg)
-subcategory pages showing sub category of the main category
+subcategory pages showing the added to wishlist alert
 
 ![cart page](https://i.imgur.com/B9DFt29.jpgg)
 Cart page with images Details and total amount of all the cart images.
@@ -40,6 +40,7 @@ Cart page with images Details and total amount of all the cart images.
 Wishlistpage page so that buy images from their later.
 
 ![Summary page](https://i.imgur.com/jNnAa8g.jpg)
+
 Successful order placed greetings and summary for user.
 
 ## Features
