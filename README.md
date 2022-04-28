@@ -41,7 +41,7 @@ Wishlistpage page so that buy images from their later.
 
 ![Summary page](https://i.imgur.com/jNnAa8g.jpg)
 
-Successful order placed greetings and summary for user.
+Successful order placed greetings and summary for the users.
 
 ## Features
  
