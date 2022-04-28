@@ -20,7 +20,7 @@ is features included.
 
 ## Deplyement Link
 
-<a href="https://sumit-unsplash-ssprm902.netlify.app/">Netlify link</a>
+<a href="https://sumit-unsplash-ssprm902.netlify.app/" />
 
 ## Features
  
