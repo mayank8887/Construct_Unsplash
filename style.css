@@ -1,0 +1,239 @@
+#container {
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 8% 10%;
+  overflow: hidden;
+}
+
+#container img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 25px;
+}
+
+#Overlay {
+  margin-bottom: 18px;
+}
+
+#Overlay img {
+  opacity: 1;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+
+#Overlay:hover {
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.align {
+  margin-top: -90px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity;
+}
+
+#Overlay:hover .align {
+  opacity: 1;
+}
+
+.align > button {
+  color: white;
+  margin: 0 15px;
+  height: 50px;
+  border: 0px;
+  margin-bottom: 20px;
+  width: 80px;
+  background-color: gainsboro;
+}
+
+.align > button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 420px) {
+  #container {
+    line-height: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 1;
+    -moz-column-gap: 5px;
+    column-count: 1;
+    column-gap: 5px;
+  }
+
+  #container img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 920px) {
+  #container {
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+  }
+
+  #container img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+  }
+}
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 100%;
+  height: 70%;
+}
+#cont {
+  position: fixed;
+  background-color: white;
+  margin-top: -10px;
+  z-index: 1;
+}
+.sai {
+  display: flex;
+  height: 50px;
+  padding: 25px 0 0 20px;
+  margin-top: 0pt;
+}
+.sai a:hover {
+  color: black;
+}
+.sai a {
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto;
+}
+.left {
+  display: flex;
+  width: 54%;
+  padding: 10px 0;
+}
+
+.left > a > img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  width: 48%;
+}
+
+.right > .navbar_links {
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 10px 0 140px;
+}
+
+.right > .navbar_links > a {
+  padding: 0 5px;
+}
+
+.right > button {
+  margin: 10px 5px 0;
+  width: 100px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: gray;
+}
+
+.right > a {
+  margin: 19px 25px;
+}
+.sai .button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px gray;
+  cursor: pointer;
+}
+.search_bar {
+  position: relative;
+  width: 940px;
+}
+.search_bar input {
+  width: 100%;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 20px;
+  font-size: 20px;
+  text-indent: 2rem;
+  position: absolute;
+  border: 1px solid #fff;
+  display: block;
+  margin-top: 0pt;
+}
+.search_bar input:hover {
+  background-color: #eee;
+}
+.search_bar i {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  color: silver;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  padding: 10px;
+  z-index: 1;
+}
+.search_bar button:hover {
+  color: black;
+}
+.search_bar a {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  color: silver;
+  top: 2px;
+  right: 0px;
+  padding: 0px;
+  margin-right: 15px;
+}
+.baba {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.baba a {
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 21px;
+}
+.baba a:hover {
+  color: black;
+}

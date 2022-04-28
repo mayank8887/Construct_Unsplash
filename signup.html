@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup_left-panel"
+            style="background-image: url(https://images.unsplash.com/9/barcelona-traffic.jpg?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max);">
+            <div class="registrations-content">
+                <div>
+                    <img
+                        src="https://unsplash.com/assets/core/logo-white-8962708214629a3e8f9fbf5b87b70c3ace41c4175cbcc267f7fbb8449ac45bdd.svg">
+                </div>
+
+                <div>
+                    <h1 class="registrations-title">Creation starts here</h1>
+                    <h2>Access 3,543,690 free, high-resolution photos you can’t
+                        find anywhere else</h2>
+                </div>
+
+                <div>
+                    <p>Uploaded over 8 years ago by Barcelona</p>
+                </div>
+            </div>
+        </div>
+        <div class="signup_right-panel">
+            <div class="right-box">
+                <div class="text-center">
+                    <h1>Join Unsplash</h1>
+                    <p>Already have an account?<a href="login.html">Login</a></p>
+                </div>
+                <form>
+                    <div id="sidebyside">
+                        <p>First name</p>
+                        <p>Last name</p>
+                    </div>
+                    <div id="sidebyside2">
+                        <input class="input_field" type="text" id="name">
+                        <input class="input_field" type="text" id="lastname">
+                    </div>
+                    <p>Email</p>
+                    <input class="input_field" type="text" id="email">
+                    <div class="username_align">
+                        <p>Username</p>
+                        <p class="text-color">(only letters,numbers and underscores)</p>
+                    </div>
+                    <input class="input_field" type="text" id="user">
+
+                    <p>Password</p>
+                    <input class="input_field" type="password" id="pass">
+
+                    <button class="signup_btn">Join</button>
+
+                </form>
+                <p class="text-center text-color">By joining, you agree to the Terms and Privacy Policy.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", onSubmit);
+    var userstack = JSON.parse(localStorage.getItem("userdatabase")) || [];;
+
+    function onSubmit(event) {
+        event.preventDefault();
+        var firstname = document.querySelector("#name").value;
+        var lastname = document.querySelector("#lastname").value;
+        var email = document.querySelector("#email").value;
+        var user = document.querySelector("#user").value;
+        var pass = document.querySelector("#pass").value;
+
+        var userdata = {
+            frstname: firstname,
+            lstname: lastname,
+            emailid: email,
+            username: user,
+            passwrd: pass,
+
+        };
+
+        userstack.push(userdata);
+
+        localStorage.setItem("userdatabase", JSON.stringify(userstack));
+        alert("singup success");
+        window.location.href = 'login.html';
+
+    }
+
+
+</script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="container">
+        <img class="login_logo"
+            src="https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg">
+        <h1>Login</h1>
+        <p class="center">Welcome back.</p>
+        <form>
+            <p>Email address</p>
+            <input type="text" id="userid">
+            <div class="login_text_pwd">
+                <p>Password</p>
+                <a href="signin.html">Forget your password?</a>
+            </div>
+            <input type="password" id="pass">
+            <button class="login_btn">Login</button>
+            <div class="login_text">
+                <p>Don't have an account?</p><a href="signup.html">Join</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", Login);
+    var registrdusers = JSON.parse(localStorage.getItem("userdatabase"));
+    function Login(event) {
+        event.preventDefault();
+        var email = document.querySelector("#userid").value;
+        var pass = document.querySelector("#pass").value;
+
+        var count = 0;
+        for (var i = 0; i < registrdusers.length; i++) {
+            console.log(registrdusers[i].emailid, registrdusers[i].passwrd);
+            if (registrdusers[i].emailid == email && registrdusers[i].passwrd == pass) {
+                alert("Successful login")
+                window.location.href = 'homepages.html';
+            }
+            else if (registrdusers[i].emailid !== email || registrdusers[i].passwrd !== pass) {
+                count++;
+                if (count == registrdusers.length) {
+                    alert("Wrong Credentials")
+                }
+            }
+        }
+    }
+</script>
