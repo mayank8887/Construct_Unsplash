@@ -16,7 +16,7 @@ is features included.
 
 
 ## 🛠 Skills
- HTML, CSS...
+ HTML, CSS, JAVASCRIPT...
 
 ## Deplyement Link
 
