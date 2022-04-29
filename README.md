@@ -1,7 +1,7 @@
 
 # Unsplash
-a website where you can buy and dowloads all kind of images even you can save your favorite item in your wishlist and just buy later as well Sign-in/Sign-up.
-is features included.
+a website where you can buy and dowloads all kind of images even you can save your favorite item in your wishlist and just buy later as well as Sign-in/Sign-up.
+features is also included.
 
 ## 🛠 Skills
  HTML, CSS, JAVASCRIPT...
@@ -47,5 +47,5 @@ Successful order placed greetings and summary for the users.
 - add the product into wishlist
 - Sorting product feature based on price
 - Cart page
-
+- checkout page.
 
