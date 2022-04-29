@@ -12,14 +12,12 @@ is features included.
 
 ## Authors
 
+- [mayank8887](https://www.github.com/mayank8887)
 - [Sumit Thakur](https://www.github.com/SamSumit007)
+- [SSuhani1102](https://www.github.com/Suhani1102)
+- [RadhakantaChhatria](https://www.github.com/RadhakantaChhatria)
 
 
-[SSuhani1102](https://www.github.com/Suhani1102)
-
-[RadhakantaChhatria](https://www.github.com/RadhakantaChhatria)
-
-[mayank8887](https://www.github.com/mayank8887)
 
 ##ScreenShots
 
@@ -50,11 +48,4 @@ Successful order placed greetings and summary for the users.
 - Sorting product feature based on price
 - Cart page
 
-
-## Area of Resposibility
-
-- Built all the Category pages of the website
-- Integrated all the pages successfully
-- Developed the Payment page
-- Built Add to Cart functionality
 
