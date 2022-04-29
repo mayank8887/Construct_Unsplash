@@ -8,7 +8,7 @@ is features included.
 
 ## Deplyement Link
 
-<a href="https://https://construct-unsplash.netlify.app//">construct-unsplash.netlify.app/</a>
+<a href="https://https://construct-unsplash.netlify.app/">construct-unsplash.netlify.app/</a>
 
 ## Authors
 
